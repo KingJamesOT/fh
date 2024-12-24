@@ -54,8 +54,6 @@
 
 
 
-
-
 /* Navbar */
   .navbar {
         text-transform: uppercase;
@@ -370,6 +368,52 @@
         height: auto;
 
     }
+
+
+        /*footer*/
+    .footer {
+        height: 50vh;
+        padding-top: 20px;
+      }
+
+
+
+    .newsletter h2 {
+        font-size: 30px;
+    }
+
+    .newsletter p {
+        font-size: 15px;
+    }
+
+ 
+    .email-input {
+        font-size: 15px;
+    }
+
+    .signup-btn {
+        padding: 10px 25px;
+        font-size: 10px;
+        background-color: white; /* White button */
+        }
+
+    .privacy {        
+        font-size: 14px;
+    }
+
+    .social-media h3 {
+        font-size: 30px;
+    }
+
+    .social-icon {
+        font-size: 15px;
+    }
+
+    .footer-text {
+        font-size: 10px;
+
+    }
+
 }
 
 

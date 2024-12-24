@@ -75,3 +75,15 @@ dropdownButtons.forEach(button => {
     }
   });
 });
+
+
+
+const menuTrigger = document.querySelectorAll('.menu-trigger');
+const menu = document.getElementById('menu');
+
+menuTrigger.forEach((trigger) => {
+  trigger.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+});
+

@@ -25,9 +25,8 @@
   background-color: rgba(26, 26, 26);
   color: white;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -40,7 +39,7 @@
 
 .menu-content {
   text-align: center;
-  margin-top: 300px;
+  
 }
 
 .menu-links li{
@@ -56,22 +55,21 @@
 }
 
 
-
 .menu-links a:hover {
     color: #774caf;
 
 }
 
-
-.brand.active {
-    opacity: 1;
+.menu-text {
+    position: fixed;
+    bottom: 20px;
 }
 
 
 
-
-
-
+.brand.active {
+    opacity: 1;
+}
 
 
 
@@ -171,7 +169,7 @@
 
     /*footer*/
     .footer {
-        height: 40vh;
+        height: 450px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;

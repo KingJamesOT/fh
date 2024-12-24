@@ -46,9 +46,9 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 100px;
-    font-size: 11px;
-    line-height: 30px;
+    padding: 50px;
+    font-size: 8px;
+    line-height: 25px;
 }
 
 .mission {
@@ -66,7 +66,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 135vh; /* Full viewport height */
+    height: 150vh; /* Full viewport height */
     background-color: #f4f4f4;
 }
 
@@ -179,6 +179,16 @@
             width: 500px;
         }
 
+        .mission-container {
+            padding: 100px;
+            font-size: 11px;
+        }
+
+.mission {
+    max-width: 1100px;
+}
+
+
 }
 
 
@@ -189,4 +199,17 @@
     .drop-down {
         width: 750px;
     }
+
+    
+
+.mission-container {
+    padding: 100px;
+    font-size: 11px;
+}
+
+.mission {
+    max-width: 1100px;
+}
+
+
 }

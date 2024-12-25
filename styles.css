@@ -72,7 +72,7 @@
     flex-direction: column;
     background-image: url(vince.jpg);
     color: white;
-    height: 40vh;
+    height: 400px;
     width: 100vw;
     margin-bottom: 5vh;
 }
@@ -128,7 +128,6 @@
 
     .event {
         margin-bottom: 8vh;
-        width: 75vw;
     }
 }
 
@@ -150,8 +149,6 @@
 
 
 .event {
-    margin-bottom: 8vh;
-    width: 75vw;
 }
 
 }

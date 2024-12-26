@@ -82,10 +82,10 @@
     .brand-logo, .brand-logo.scrolled{
         opacity: 1;
         z-index: 100;
-        width: 50px;
+        width: 30px;
         height: auto;
         position: fixed;
-        left: 30px;
+        left: 15px;
         top: 40px;
         transition: all 300ms ease;
     }
@@ -93,9 +93,9 @@
     .hamburger, .hamburger.scrolled{
         opacity: 1;
         z-index: 100;
-        font-size: 25px;
+        font-size: 15px;
         position: fixed;
-        right: 30px;
+        right: 20px;
         top: 42px;
         transition: all 300ms ease;
         z-index: 100;
@@ -236,7 +236,7 @@
 
     .divider {
         border: 1px solid #ffffff; /* Darker divider line */
-        width: 100vh;
+        width: 50vw;
         align-self: center;
     }
 
@@ -454,7 +454,7 @@
 
         /*footer*/
     .footer {
-        height: 50vh;
+        height: 500px;
         padding-top: 20px;
       }
 

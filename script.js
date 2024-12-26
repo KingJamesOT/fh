@@ -87,3 +87,13 @@ menuTrigger.forEach((trigger) => {
   });
 });
 
+
+
+// arrow
+
+document.querySelector('.arrow-container').addEventListener('click', function (event) {
+  event.preventDefault(); // Prevent default link behavior
+
+  // Scroll smoothly to the next section
+  document.querySelector('#next-section').scrollIntoView({ behavior: 'smooth' });
+});

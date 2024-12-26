@@ -33,13 +33,13 @@
 
 .left{
     margin-right: 20px;
-    display: none;
+        width: 11px;
 }
 
 .right {
     margin-left: 20px;
+        width: 7px;
 }
-
 
 
 
@@ -55,28 +55,24 @@
 }
 
 .container h2 {
-    font-size: 20px;
+    font-size: 13px;
     margin-bottom: 10px;
     font-weight: 600;
     color: #181818;
 }
 
 .container h4 {
-    font-size: 14px;
+    font-size: 10px;
     margin-bottom: 10px;
-    font-weight: 400;
+    font-weight: 200;
     color: #181818;
 }
 
-.container p {
-    font-size: 16px;
-    color: #555;
-}
 
 .container h3 {
     margin-top: 40px;
     font-weight: 700;
-    font-size: 16px;    
+    font-size: 10px;    
     margin-bottom: 15px;
     color: #181818;
 }        
@@ -152,9 +148,23 @@
 }
 
 
-.left {
-    display: block;
+.left, .right {
+    width: 24px;
 }
+
+
+.container h3 {
+    font-size: 15px;
+}
+
+.container h2 {
+    font-size: 20px;
+}
+
+.container h4 {
+    font-size: 13px;
+}
+
 }
 
 

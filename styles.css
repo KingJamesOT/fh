@@ -52,58 +52,59 @@
 
 
 /*events section*/
-.events {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100vw;
-    text-align: center;
- 
-}
-
-.events-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-image: url(vince.jpg);
-    color: white;
-    height: 400px;
-    width: 100vw;
-    margin-bottom: 5vh;
-}
-
-.events-text h1 {
-    font-weight: 600;
-    font-size: clamp(1.75rem, 4vw, 3rem); 
-}
-
-.events-text p {
-    padding-top: 25px;
-    font-size: clamp(0.75rem, 1.5vw, 1.25rem);
-}
-
-
 .event {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5vh;
-    width: 85vw;
+  display: flex;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(233, 233, 233);
 }
 
-.event img {
-    width: 100vw;
-    object-fit: cover; 
-    box-shadow: #333 (1, 1, 1);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); 
-    transition: all .3s ease; 
+.slider {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 1em;
+  width: 800px;
+  height: 450px;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+    -webkit-tap-highlight-color: transparent;
+    background-color: white;
+
 }
 
-.event img:hover {    
-    cursor: pointer;
+.img-container {
+  display: flex;
+  transition: transform 300ms ease-in-out;
 }
+
+.img-container img {
+  width: 100%;
+}
+
+.fa-solid {
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  opacity: 0.75;
+  transition: opacity 100ms ease-in-out;
+  z-index: 100;
+}
+
+.fa-solid:hover {
+  opacity: 1;
+}
+
+.previous {
+  left: 5rem;
+}
+
+.next {
+  right: 5rem;
+}
+
+
+
 
 
 
@@ -140,3 +141,6 @@
 
 
 }
+
+
+

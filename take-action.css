@@ -33,14 +33,13 @@
 
 .left{
     margin-right: 20px;
-        width: 11px;
+    width: 11px;
 }
 
 .right {
     margin-left: 20px;
-        width: 7px;
+    width: 7px;
 }
-
 
 
 
@@ -125,7 +124,10 @@
     margin-bottom: 0px
 }
         
-
+   /*arrow*/
+.scroll-to-next {
+    bottom: 35%;
+}
 
 
 @media (min-width: 756px) {
@@ -152,8 +154,13 @@
 }
 
 
-.left, .right {
+.left {
     width: 24px;
+}
+
+
+.right {
+    width: 14px;
 }
 
 
@@ -186,13 +193,7 @@
     font-size: 30px;
 }
 
-.container {
 
-}
-
-
-.button {
-} 
 }
 
 

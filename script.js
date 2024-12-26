@@ -78,22 +78,25 @@ dropdownButtons.forEach(button => {
 
 
 
-const menuTrigger = document.querySelectorAll('.menu-trigger');
-const menu = document.getElementById('menu');
-
-menuTrigger.forEach((trigger) => {
-  trigger.addEventListener('click', () => {
-    menu.classList.toggle('active');
-  });
-});
 
 
 
-// arrow
+// arrow hero
 
 document.querySelector('.arrow-container').addEventListener('click', function (event) {
   event.preventDefault(); // Prevent default link behavior
 
   // Scroll smoothly to the next section
   document.querySelector('#next-section').scrollIntoView({ behavior: 'smooth' });
+});
+
+
+
+// arrow nav
+
+document.querySelector('.scroll-to-top').addEventListener('click', function (event) {
+  event.preventDefault(); // Prevent default link behavior
+
+  // Scroll smoothly to the next section
+  document.querySelector('#top').scrollIntoView({ behavior: 'smooth' });
 });

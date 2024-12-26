@@ -66,12 +66,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150vh; /* Full viewport height */
+    height: 1000px; /* Full viewport height */
     background-color: #f4f4f4;
+    overflow: hidden;
 }
 
 .container {
+    width: 95%;
+    max-width: 400px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background-color: #fff;
     padding: 30px 50px;
     border-radius: 10px;
@@ -80,6 +86,8 @@
 
 .container h1 {
     margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
     color: #181818;
 }
 
@@ -113,7 +121,7 @@
 }
 
 .drop-down {
-    width: 300px;
+    width:  90%;
     margin: 20px 0;
     overflow: hidden;
     display: flex;
@@ -126,7 +134,7 @@
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 10px;
-    width: 75%; /* Full width for stacking */
+    width: 90%; /* Full width for stacking */
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -176,7 +184,7 @@
 }
 
 .drop-down {
-    width: 500px;
+    width: 100%
 }
 
 .mission-container {
@@ -188,7 +196,14 @@
     max-width: 1100px;
 }
 
+.container {
+    width: 75%;
+    max-width: 10000px;
+}
 
+.wrapper {
+    height: 1300px;
+}
 }
 
 
@@ -197,7 +212,8 @@
         width: 100%;
     }
     .drop-down {
-        width: 750px;
+        width: 100%;
+        max-width: 1200px;;
     }
 
     
@@ -212,4 +228,9 @@
 }
 
 
+}
+
+  /*arrow*/
+.scroll-to-next {
+    bottom: 35%;
 }

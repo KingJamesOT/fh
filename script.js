@@ -27,7 +27,6 @@ window.addEventListener("load", () => {
 // give class scrolled
 document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.querySelector('.navbar');
-    const hamburger = document.querySelector('.hamburger');
     const brand = document.querySelector('.brand-logo')
 
     window.addEventListener('scroll', function() {
@@ -37,19 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
             navbar.classList.remove('scrolled');
         }
 
-        if (window.scrollY > 76) { 
-            hamburger.classList.add('scrolled');
 
-        } else {
-            hamburger.classList.remove('scrolled');
-        }
-
-        
-        if (window.scrollY >76) { 
-            brand.classList.add('scrolled');
-        } else {
-            brand.classList.remove('scrolled');
-        }
     });
 });
 
@@ -92,52 +79,53 @@ document.querySelector('.arrow-container').addEventListener('click', function (e
 
 
 
-// arrow nav
+// Select elements
+const slider = document.querySelector(".img-container"); // The container holding the images
+const images = document.querySelectorAll(".img-container img"); // All images
+const prevButton = document.querySelector(".previous"); // Previous button
+const nextButton = document.querySelector(".next"); // Next button
+const dots = document.querySelectorAll(".dot"); // All dots
 
-document.querySelector('.scroll-to-top').addEventListener('click', function (event) {
-  event.preventDefault(); // Prevent default link behavior
+let currentIndex = 0; // Track the current image index
+const totalImages = images.length; // Total number of images
 
-  // Scroll smoothly to the next section
-  document.querySelector('#top').scrollIntoView({ behavior: 'smooth' });
-});
-
-
-
-const next = document.querySelector(".next");
-const prev = document.querySelector(".previous");
-
-const numImg = document.querySelectorAll("img").length;
-let currImg = 1;
-
-let timeoutID;
-
-next.addEventListener("click", () => {
-  currImg++;
-  clearTimeout(timeoutID);
-  updateImage();
-});
-
-prev.addEventListener("click", () => {
-  currImg--;
-  clearTimeout(timeoutID);
-
-  updateImage();
-});
-
-const imgcontainer = document.querySelector(".img-container");
-
-function updateImage() {
-  if (currImg > numImg) {
-    currImg = 1;
-  } else if (currImg < 1) {
-    currImg = numImg;
-  }
-  imgcontainer.style.transform = `translateX(-${(currImg - 1) * 800}px)`;
-
-  timeoutID = setTimeout(() => {
-    currImg++;
-    updateImage();
-  }, 2000);
+// Function to update the slider position
+function updateSliderPosition() {
+  const offset = -currentIndex * 100; // Calculate the translation percentage
+  slider.style.transform = `translateX(${offset}%)`;
+  updateDots(); // Highlight the correct dot
 }
 
-updateImage();
+// Function to update the active dot
+function updateDots() {
+  dots.forEach((dot, index) => {
+    if (index === currentIndex) {
+      dot.classList.add("active");
+    } else {
+      dot.classList.remove("active");
+    }
+  });
+}
+
+// Event listener for the 'previous' button
+prevButton.addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + totalImages) % totalImages; // Move to the previous image (looping)
+  updateSliderPosition();
+});
+
+// Event listener for the 'next' button
+nextButton.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % totalImages; // Move to the next image (looping)
+  updateSliderPosition();
+});
+
+// Add click event listeners to dots
+dots.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    currentIndex = index; // Update the currentIndex to the clicked dot
+    updateSliderPosition();
+  });
+});
+
+// Initialize the first dot as active
+updateDots();

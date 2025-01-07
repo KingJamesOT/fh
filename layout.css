@@ -66,6 +66,9 @@
         z-index: 10;
     }
 
+    ul {
+        list-style-type: none;
+    }
 
     .nav-links {
         opacity: 1;

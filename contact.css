@@ -20,14 +20,14 @@
 }
 
 .hero-text h1 {
-    font-size: 50px; 
+    font-size: 30px; 
     font-weight: 700;
     margin-bottom: 10px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
 }
 
 .hero-text p {
-    font-size: 30px;
+    font-size: 10px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
 }
 
@@ -119,3 +119,33 @@
   margin-bottom: 70px;
   text-align: center;
 }
+
+
+@media (min-width: 756px) {
+  .hero-text h1 {
+      font-size: 40px; 
+      margin-bottom: 10px;
+  }
+
+  .hero-text p {
+      font-size: 20px;
+  }
+
+}
+
+
+@media (min-width: 1200px) {
+    
+.hero-text h1 {
+    font-size: 50px; 
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 30px;
+}
+
+
+}
+
+

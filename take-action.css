@@ -1,13 +1,14 @@
 /*hero section*/
 .hero {
     /* Background image */
-    background-image: url('George\(w\).jpg');
+    background-image: url('cherise.jpg');
     height: 70vh;
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 
 .hero-text {
     position: absolute;
